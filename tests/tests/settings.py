@@ -1,4 +1,10 @@
 # Django settings for tests project.
+import os
+import sys
+
+# Append to sys path parent directory, contains testing application
+project_path = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(os.path.split(project_path)[0])
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -118,10 +124,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admin',
+    'admin',
+    'django_wtf.admin',
 )
 
 # A sample logging configuration. The only tangible logging
