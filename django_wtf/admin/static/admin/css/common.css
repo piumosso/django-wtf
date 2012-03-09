@@ -120,3 +120,31 @@ body {
     font-size: 11px;
     color: #999;
 }
+
+
+/**
+ * @section     Messages
+ */
+
+.messages {
+    padding-bottom: 5px;
+}
+.messages__list {
+    margin: 0;
+    padding: 0;
+}
+.messages__item {
+    display: block;
+    margin: 0 0 3px 0;
+    padding: 4px 5px 4px 25px;
+    font-size: 12px;
+    color: #666666;
+    border-bottom: 1px solid #ddd;
+    background: #ffc url(../img/icon_success.gif) 5px .3em no-repeat;
+}
+.messages__item_type_warning {
+    background-image: url(../img/icon_alert.gif);
+}
+.messages__item_type_error {
+    background-image: url(../img/icon_error.gif);
+}

@@ -51,74 +51,75 @@
 
 
 <body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}">
+    <section class="container">
+        {% if not is_popup %}
+            <header class="header" id="header">
+            {% block branding %}{% endblock %}
 
-<!-- Container -->
-<section class="container">
-
-    {% if not is_popup %}
-        <header class="header" id="header">
-        {% block branding %}{% endblock %}
-
-        {% if user.is_active and user.is_staff %}
-            <div class="user">
-                <span class="user__welcome">
-                    {% trans 'Welcome,' %}
-                    <span class="user__name">
-                        {% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}.
+            {% if user.is_active and user.is_staff %}
+                <div class="user">
+                    <span class="user__welcome">
+                        {% trans 'Welcome,' %}
+                        <span class="user__name">
+                            {% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}.
+                        </span>
                     </span>
-                </span>
 
-                {% block userlinks %}
-                    {% url 'django-admindocs-docroot' as docsroot %}
-                    {% if docsroot %}
-                        <a class="user__link" href="{{ docsroot }}">{% trans 'Documentation' %}</a>
+                    {% block userlinks %}
+                        {% url 'django-admindocs-docroot' as docsroot %}
+                        {% if docsroot %}
+                            <a class="user__link" href="{{ docsroot }}">{% trans 'Documentation' %}</a>
+                            <span class="user__link-separator">/</span>
+                        {% endif %}
+                        <a class="user__link" href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a>
                         <span class="user__link-separator">/</span>
+                        <a class="user__link" href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+                    {% endblock %}
+                </div>
+            {% endif %}
+
+            {% block nav-global %}{% endblock %}
+            </header>
+
+            {% block breadcrumbs %}
+                <nav class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+                    {% if title %}
+                        <span class="breadcrumbs__separator">&rsaquo;</span>
+                        <span class="breadcrumbs__current">{{ title }}</span>
                     {% endif %}
-                    <a class="user__link" href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a>
-                    <span class="user__link-separator">/</span>
-                    <a class="user__link" href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
-                {% endblock %}
-            </div>
+                </nav>
+            {% endblock %}
         {% endif %}
 
-        {% block nav-global %}{% endblock %}
-        </header>
-
-        {% block breadcrumbs %}
-            <nav class="breadcrumbs">
-                <a class="breadcrumbs__link" href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
-                {% if title %}
-                    <span class="breadcrumbs__separator">&rsaquo;</span>
-                    <span class="breadcrumbs__current">{{ title }}</span>
-                {% endif %}
-            </nav>
+        {% block messages %}
+            {% if messages %}
+                <section class="messages">
+                    <ul class="messages__list">
+                        {% for message in messages %}
+                            <li class="messages__item {% if message.tags %}messages__item_type_{{ message.tags }}{% endif %}">
+                                {{ message }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
         {% endblock %}
-    {% endif %}
 
-    {% block messages %}
-        {% if messages %}
-        <ul class="messagelist">{% for message in messages %}
-          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-        {% endfor %}</ul>
-        {% endif %}
-    {% endblock messages %}
+        <!-- Content -->
+        <div id="content" class="{% block coltype %}colM{% endblock %}">
+            {% block pretitle %}{% endblock %}
+            {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
+            {% block content %}
+            {% block object-tools %}{% endblock %}
+            {{ content }}
+            {% endblock %}
+            {% block sidebar %}{% endblock %}
+            <br class="clear" />
+        </div>
+        <!-- END Content -->
 
-    <!-- Content -->
-    <div id="content" class="{% block coltype %}colM{% endblock %}">
-        {% block pretitle %}{% endblock %}
-        {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
-        {% block content %}
-        {% block object-tools %}{% endblock %}
-        {{ content }}
-        {% endblock %}
-        {% block sidebar %}{% endblock %}
-        <br class="clear" />
-    </div>
-    <!-- END Content -->
-
-    {% block footer %}<div id="footer"></div>{% endblock %}
-</section>
-<!-- END Container -->
-
+        {% block footer %}<div id="footer"></div>{% endblock %}
+    </section>
 </body>
 </html>
