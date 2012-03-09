@@ -120,9 +120,13 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.admin',
-    'app',
+
+    # Admin application
     'django_wtf.admin',
+    'django.contrib.admin',
+
+    # Test application
+    'app',
 )
 
 # A sample logging configuration. The only tangible logging
