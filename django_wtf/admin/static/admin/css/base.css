@@ -666,10 +666,6 @@ table#change-history tbody th {
 /* PAGE STRUCTURE */
 
 
-#content {
-    margin: 10px 15px;
-}
-
 
 #content-main {
     float: left;
@@ -686,9 +682,6 @@ table#change-history tbody th {
 
 /* COLUMN TYPES */
 
-.colMS {
-    margin-right: 20em !important;
-}
 
 .colSM {
     margin-left: 20em !important;
@@ -704,7 +697,7 @@ table#change-history tbody th {
     float: right;
 }
 
-.popup .colM {
+.popup .content_colM {
     width: 95%;
 }
 
@@ -714,9 +707,6 @@ table#change-history tbody th {
     margin-right: 15px;
 }
 
-.dashboard #content {
-    width: 500px;
-}
 
 
 /* SIDEBAR */

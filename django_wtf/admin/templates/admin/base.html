@@ -53,32 +53,32 @@
 <body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}">
     <section class="container">
         {% if not is_popup %}
-            <header class="header" id="header">
-            {% block branding %}{% endblock %}
+            <header class="header">
+                {% block branding %}{% endblock %}
 
-            {% if user.is_active and user.is_staff %}
-                <div class="user">
-                    <span class="user__welcome">
-                        {% trans 'Welcome,' %}
-                        <span class="user__name">
-                            {% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}.
+                {% if user.is_active and user.is_staff %}
+                    <div class="user">
+                        <span class="user__welcome">
+                            {% trans 'Welcome,' %}
+                            <span class="user__name">
+                                {% filter force_escape %}{% firstof user.first_name user.username %}{% endfilter %}.
+                            </span>
                         </span>
-                    </span>
 
-                    {% block userlinks %}
-                        {% url 'django-admindocs-docroot' as docsroot %}
-                        {% if docsroot %}
-                            <a class="user__link" href="{{ docsroot }}">{% trans 'Documentation' %}</a>
+                        {% block userlinks %}
+                            {% url 'django-admindocs-docroot' as docsroot %}
+                            {% if docsroot %}
+                                <a class="user__link" href="{{ docsroot }}">{% trans 'Documentation' %}</a>
+                                <span class="user__link-separator">/</span>
+                            {% endif %}
+                            <a class="user__link" href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a>
                             <span class="user__link-separator">/</span>
-                        {% endif %}
-                        <a class="user__link" href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a>
-                        <span class="user__link-separator">/</span>
-                        <a class="user__link" href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
-                    {% endblock %}
-                </div>
-            {% endif %}
+                            <a class="user__link" href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+                        {% endblock %}
+                    </div>
+                {% endif %}
 
-            {% block nav-global %}{% endblock %}
+                {% block nav-global %}{% endblock %}
             </header>
 
             {% block breadcrumbs %}
@@ -106,18 +106,22 @@
             {% endif %}
         {% endblock %}
 
-        <!-- Content -->
-        <div id="content" class="{% block coltype %}colM{% endblock %}">
-            {% block pretitle %}{% endblock %}
-            {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
+        <section class="content {% block coltype %}content_colM{% endblock %}">
+            <header class="content__header">
+                {% block pretitle %}{% endblock %}
+                {% block content_title %}
+                    {% if title %}
+                        <h1 class="content__title">{{ title }}</h1>
+                    {% endif %}
+                {% endblock %}
+            </header>
             {% block content %}
-            {% block object-tools %}{% endblock %}
-            {{ content }}
+                {% block object-tools %}{% endblock %}
+                {{ content }}
             {% endblock %}
             {% block sidebar %}{% endblock %}
             <br class="clear" />
-        </div>
-        <!-- END Content -->
+        </section>
 
         {% block footer %}
             <footer class="footer"></footer>

@@ -2,10 +2,6 @@
 
 /* Proper fixed width for dashboard in IE6 */
 
-.dashboard #content {
-    *width: 768px;
-}
-
 .dashboard #content-main {
     *width: 535px;
 }
@@ -18,7 +14,7 @@
 
 /* Put the right sidebars back on the page */
 
-.colMS #content-related {
+.content_colMS #content-related {
     _margin-right: 0;
     _margin-left: 10px;
     _position: static;

@@ -64,10 +64,6 @@ tfoot td:first-child {
     margin-right: auto;
 }
 
-.colMS {
-    margin-left: 20em !important;
-    margin-right: 10px !important;
-}
 
 /* SORTABLE TABLES */
 
@@ -227,9 +223,6 @@ fieldset .field-box {
 
 /* IE7 specific bug fixes */
 
-div.colM {
-    position: relative;
-}
 
 .submit-row input {
     float: left;

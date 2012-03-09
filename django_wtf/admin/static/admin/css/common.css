@@ -158,3 +158,44 @@ body {
 .messages__item_type_error {
     background-image: url(../img/icon_error.gif);
 }
+
+
+/**
+ * @section     Content
+ */
+
+.content {
+    margin: 10px 15px;
+}
+.dashboard .content {
+    width: 500px;
+}
+.lt-ie8 .dashboard .content {
+    width: 768px;
+}
+.content__header {}
+.content__title {
+    margin: 0 0 .2em 0;
+    padding: 0 6px 0 0;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #666666;
+}
+
+
+/**
+ * @subsection  Content column types
+ */
+
+.content_colM {}
+.ie7 .content_colM {
+    position: relative;
+}
+.content_colMS {
+    margin-right: 20em !important;
+}
+.rtl .content_colMS {
+    margin-left: 20em !important;
+    margin-right: 10px !important;
+}
+.content_flex {}
