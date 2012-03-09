@@ -96,6 +96,16 @@ body {
 
 
 /**
+ * @section     Footer
+ */
+
+.footer {
+    clear: both;
+    padding: 10px;
+}
+
+
+/**
  * @section     Breadcrumbs
  */
 
