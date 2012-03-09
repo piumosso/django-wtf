@@ -1,0 +1,11 @@
+/.idea
+/.pydevproject
+/.externalToolBuilders
+/.project
+/.settings
+/src
+/_djangosphinx
+/_django-fabdeploy-extensions
+*.pyc
+/log.txt
+.DS_Store
