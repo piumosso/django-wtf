@@ -2,7 +2,11 @@
 {% load i18n %}
 {% load url from future %}
 
-{% block breadcrumbs %}<div class="breadcrumbs"><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a></div>{% endblock %}
+{% block breadcrumbs %}
+    <nav class="breadcrumbs">
+        <a class="breadcrumbs__link" href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    </nav>
+{% endblock %}
 
 {% block content %}
 

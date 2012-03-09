@@ -93,3 +93,30 @@ body {
     font-size: 11px;
     color: #ffc;
 }
+
+
+/**
+ * @section     Breadcrumbs
+ */
+
+.breadcrumbs {
+    padding: 2px 8px 3px 8px;
+    text-align: left;
+    border-top: 1px solid white;
+    border-bottom: 1px solid #ccc;
+    background: white url(../img/nav-bg-reverse.gif) 0 -10px repeat-x;
+}
+.rtl .breadcrumbs {
+    text-align: right;
+}
+.breadcrumbs__link {
+    font-size: 11px;
+}
+.breadcrumbs__separator {
+    font-size: 11px;
+    color: #999;
+}
+.breadcrumbs__current {
+    font-size: 11px;
+    color: #999;
+}

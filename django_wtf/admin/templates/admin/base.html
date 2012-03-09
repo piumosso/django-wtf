@@ -84,13 +84,15 @@
         {% block nav-global %}{% endblock %}
         </header>
 
-
-    {% block breadcrumbs %}
-    <div class="breadcrumbs">
-    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
-    {% if title %} &rsaquo; {{ title }}{% endif %}
-    </div>
-    {% endblock %}
+        {% block breadcrumbs %}
+            <nav class="breadcrumbs">
+                <a class="breadcrumbs__link" href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+                {% if title %}
+                    <span class="breadcrumbs__separator">&rsaquo;</span>
+                    <span class="breadcrumbs__current">{{ title }}</span>
+                {% endif %}
+            </nav>
+        {% endblock %}
     {% endif %}
 
     {% block messages %}

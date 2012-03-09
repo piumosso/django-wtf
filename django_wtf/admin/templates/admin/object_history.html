@@ -4,13 +4,17 @@
 {% load admin_urls %}
 
 {% block breadcrumbs %}
-<div class="breadcrumbs">
-<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
-&rsaquo; <a href="{% url 'admin:app_list' app_label=app_label %}">{{ app_label|capfirst|escape }}</a>
-&rsaquo; <a href="{% url opts|admin_urlname:'changelist' %}">{{ module_name }}</a>
-&rsaquo; <a href="{% url opts|admin_urlname:'changelist' %}{{ object.pk }}">{{ object|truncatewords:"18" }}</a>
-&rsaquo; {% trans 'History' %}
-</div>
+    <nav class="breadcrumbs">
+        <a class="breadcrumbs__link" href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+        <span class="breadcrumbs__separator">&rsaquo;</span>
+        <a class="breadcrumbs__link" href="{% url 'admin:app_list' app_label=app_label %}">{{ app_label|capfirst|escape }}</a>
+        <span class="breadcrumbs__separator">&rsaquo;</span>
+        <a class="breadcrumbs__link" href="{% url opts|admin_urlname:'changelist' %}">{{ module_name }}</a>
+        <span class="breadcrumbs__separator">&rsaquo;</span>
+        <a class="breadcrumbs__link" href="{% url opts|admin_urlname:'changelist' %}{{ object.pk }}">{{ object|truncatewords:"18" }}</a>
+        <span class="breadcrumbs__separator">&rsaquo;</span>
+        <span class="breadcrumbs__current">{% trans 'History' %}</span>
+    </nav>
 {% endblock %}
 
 {% block content %}

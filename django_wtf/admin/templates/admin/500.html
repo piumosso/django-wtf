@@ -3,10 +3,11 @@
 {% load url from future %}
 
 {% block breadcrumbs %}
-<div class="breadcrumbs">
-<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
-&rsaquo; {% trans 'Server error' %}
-</div>
+    <nav class="breadcrumbs">
+        <a class="breadcrumbs__link" href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+        <span class="breadcrumbs__separator">&rsaquo;</span>
+        <span class="breadcrumbs__current">{% trans 'Server error' %}</span>
+    </nav>
 {% endblock %}
 
 {% block title %}{% trans 'Server error (500)' %}{% endblock %}
