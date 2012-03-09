@@ -181,6 +181,22 @@ body {
     font-weight: bolder;
     color: #666666;
 }
+.content__main {
+    float: left;
+    width: 100%;
+}
+.rtl .content__main {
+    float: right;
+}
+.login .content__main {
+    width: 100%;
+}
+.lt-ie8 .m-dashboard #content-main {
+    width: 535px;
+}
+.content_colSM .content__main {
+    float: right;
+}
 
 
 /**

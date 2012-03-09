@@ -667,10 +667,7 @@ table#change-history tbody th {
 
 
 
-#content-main {
-    float: left;
-    width: 100%;
-}
+
 
 #content-related {
     float: right;
@@ -683,19 +680,16 @@ table#change-history tbody th {
 /* COLUMN TYPES */
 
 
-.colSM {
+.content_colSM {
     margin-left: 20em !important;
 }
 
-.colSM #content-related {
+.content_colSM #content-related {
     float: left;
     margin-right: 0;
     margin-left: -19em;
 }
 
-.colSM #content-main {
-    float: right;
-}
 
 
 .subcol {

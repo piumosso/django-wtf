@@ -52,7 +52,7 @@
 {% block coltype %}content_flex{% endblock %}
 
 {% block content %}
-  <div id="content-main">
+    <section class="content__main">
     {% block object-tools %}
       {% if has_add_permission %}
         <ul class="object-tools">
@@ -98,5 +98,5 @@
       {% block pagination %}{% pagination cl %}{% endblock %}
       </form>
     </div>
-  </div>
+    </section>
 {% endblock %}
