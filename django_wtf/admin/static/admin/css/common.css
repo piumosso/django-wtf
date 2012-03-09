@@ -1,0 +1,95 @@
+/**
+ * Common styles
+ *
+ * Contains all the styles needed for the administrative interface, divided into sections.
+ * Later this dump should be divided into chunks (individual files).
+ *
+ * @package     django-wtf.admin
+ * @version
+ * @author      Golikov Artem <golikoffartem@gmail.com.ru>
+ */
+
+
+/**
+ * @section     Wrapers
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+    color: #333;
+    background: #fff;
+}
+.container {
+    position: relative;
+    width: 100%;
+    min-width: 760px;
+    padding: 0;
+}
+.ie6 .container {
+    position: static;
+}
+.login .container {
+    width: 28em;
+    min-width: 300px;
+    margin: 100px auto 0;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+
+/**
+ * @section     Header
+ */
+
+.header {
+    width: 100%;
+    overflow: hidden;
+    background: #417690;
+}
+.header__branding {
+    margin: 8px 0;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #f4f379;
+}
+
+
+/**
+ * @subsection  User name and links
+ */
+
+.user {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.2em 10px;
+    text-align: right;
+}
+.rtl .user {
+    right: auto;
+    left: 0;
+    text-align: left;
+}
+.user__welcome {
+    font-size: 11px;
+    color: #ffc;
+}
+.user__name {
+    font-weight: bolder;
+}
+.user__link:link,
+.user__link:visited {
+    font-size: 11px;
+    color: white;
+}
+.user__link:hover {
+    text-decoration: underline;
+}
+.user__link-separator {
+    font-size: 11px;
+    color: #ffc;
+}

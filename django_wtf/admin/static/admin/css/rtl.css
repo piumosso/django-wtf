@@ -53,11 +53,6 @@ tfoot td:first-child {
 
 /* LAYOUT */
 
-#user-tools {
-    right: auto;
-    left: 0;
-    text-align: left;
-}
 
 div.breadcrumbs {
     text-align: right;
