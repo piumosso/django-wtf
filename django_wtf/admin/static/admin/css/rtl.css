@@ -73,7 +73,7 @@ table thead th.sorted .sortoptions {
 
 /* dashboard styles */
 
-.dashboard .module table td a {
+.m-dashboard .module table td a {
     padding-left: .6em;
     padding-right: 12px;
 }

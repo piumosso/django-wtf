@@ -167,10 +167,10 @@ body {
 .content {
     margin: 10px 15px;
 }
-.dashboard .content {
+.m-dashboard .content {
     width: 500px;
 }
-.lt-ie8 .dashboard .content {
+.lt-ie8 .m-dashboard .content {
     width: 768px;
 }
 .content__header {}
@@ -190,6 +190,9 @@ body {
 .content_colM {}
 .ie7 .content_colM {
     position: relative;
+}
+.m-popup .content_colM {
+    width: 95%;
 }
 .content_colMS {
     margin-right: 20em !important;

@@ -2,7 +2,7 @@
 
 /* Proper fixed width for dashboard in IE6 */
 
-.dashboard #content-main {
+.m-dashboard #content-main {
     *width: 535px;
 }
 

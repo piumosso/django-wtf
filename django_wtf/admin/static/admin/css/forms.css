@@ -167,7 +167,7 @@ fieldset.monospace textarea {
     overflow: hidden;
 }
 
-body.popup .submit-row {
+body.m-popup .submit-row {
     overflow: auto;
 }
 
