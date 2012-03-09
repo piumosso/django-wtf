@@ -12,19 +12,9 @@
 
 /* Put the right sidebars back on the page */
 
-.content_colMS #content-related {
-    _margin-right: 0;
-    _margin-left: 10px;
-    _position: static;
-}
 
 /* Put the left sidebars back on the page */
 
-.content_colSM #content-related {
-    _margin-right: 10px;
-    _margin-left: -115px;
-    _position: static;
-}
 
 .form-row {
     _height: 1%;

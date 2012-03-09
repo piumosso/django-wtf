@@ -164,6 +164,11 @@ body {
  * @section     Content
  */
 
+
+/**
+ * @subsection  Content layout wrapper
+ */
+
 .content {
     margin: 10px 15px;
 }
@@ -181,6 +186,12 @@ body {
     font-weight: bolder;
     color: #666666;
 }
+
+
+/**
+ * @subsection  Main content wrapper
+ */
+
 .content__main {
     float: left;
     width: 100%;
@@ -196,6 +207,38 @@ body {
 }
 .content_colSM .content__main {
     float: right;
+}
+
+
+/**
+ * @subsection  Related content wrapper
+ */
+
+.content__related {
+    position: relative;
+    width: 18em;
+    margin-right: -19em;
+    float: right;
+}
+.content_colSM .content__related {
+    float: left;
+    margin-right: 0;
+    margin-left: -19em;
+}
+.ie6 .content_colMS .content__related {
+    position: static;
+    margin-right: 0;
+    margin-left: 10px;
+}
+.ie6 .content_colSM .content__related {
+    position: static;
+    margin-right: 10px;
+    margin-left: -115px;
+}
+.rtl .content__related {
+    margin-left: -19em;
+    margin-right: auto;
+    float: left;
 }
 
 
@@ -218,3 +261,69 @@ body {
     margin-right: 10px !important;
 }
 .content_flex {}
+.content_colSM {
+    margin-left: 20em !important;
+}
+
+
+/**
+ * @section     Module
+ */
+
+.module {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    background: white;
+}
+.module__header {
+    margin: 0;
+    padding: 2px 5px 3px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    background: url("../img/default-bg.gif") repeat-x scroll left top #7CA0C7;
+}
+.module__subheader {
+    margin-top: 0.6em;
+    margin-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+}
+.module__table {
+    border-collapse: collapse;
+}
+.module blockquote {
+    margin-left: 12px;
+}
+
+/*
+
+.module p, .module ul, .module h3, .module h4, .module dl, .module pre {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.module ul, .module ol {
+    margin-left: 1.5em;
+}
+
+.module h3 {
+    margin-top: .6em;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    margin: 0;
+    padding: 2px 5px 3px 5px;
+    font-size: 11px;
+    text-align: left;
+    font-weight: bold;
+    background: #7CA0C7 url(../img/default-bg.gif) top left repeat-x;
+    color: white;
+}
+
+
+*/
