@@ -205,7 +205,7 @@ body {
 .lt-ie8 .m-dashboard #content-main {
     width: 535px;
 }
-.content_colSM .content__main {
+.content_type_colSM .content__main {
     float: right;
 }
 
@@ -220,17 +220,17 @@ body {
     margin-right: -19em;
     float: right;
 }
-.content_colSM .content__related {
+.content_type_colSM .content__related {
     float: left;
     margin-right: 0;
     margin-left: -19em;
 }
-.ie6 .content_colMS .content__related {
+.ie6 .content_type_colMS .content__related {
     position: static;
     margin-right: 0;
     margin-left: 10px;
 }
-.ie6 .content_colSM .content__related {
+.ie6 .content_type_colSM .content__related {
     position: static;
     margin-right: 10px;
     margin-left: -115px;
@@ -246,22 +246,22 @@ body {
  * @subsection  Content column types
  */
 
-.content_colM {}
-.ie7 .content_colM {
+.content_type_colM {}
+.ie7 .content_type_colM {
     position: relative;
 }
-.m-popup .content_colM {
+.m-popup .content_type_colM {
     width: 95%;
 }
-.content_colMS {
+.content_type_colMS {
     margin-right: 20em !important;
 }
-.rtl .content_colMS {
+.rtl .content_type_colMS {
     margin-left: 20em !important;
     margin-right: 10px !important;
 }
-.content_flex {}
-.content_colSM {
+.content_type_flex {}
+.content_type_colSM {
     margin-left: 20em !important;
 }
 

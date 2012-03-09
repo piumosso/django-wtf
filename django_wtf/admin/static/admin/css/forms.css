@@ -73,7 +73,7 @@ form ul.inline li {
     width: auto;
 }
 
-.content_colMS .aligned .vLargeTextField, .content_colMS .aligned .vXMLLargeTextField {
+.content_type_colMS .aligned .vLargeTextField, .content_type_colMS .aligned .vXMLLargeTextField {
     width: 350px;
 }
 
@@ -97,7 +97,7 @@ form .aligned p.help {
     padding-left: 4px;
 }
 
-.content_colM .aligned .vLargeTextField, .content_colM .aligned .vXMLLargeTextField {
+.content_type_colM .aligned .vLargeTextField, .content_type_colM .aligned .vXMLLargeTextField {
     width: 610px;
 }
 
@@ -125,7 +125,7 @@ form .wide p.help {
     padding-left: 38px;
 }
 
-.content_colM fieldset.wide .vLargeTextField, .content_colM fieldset.wide .vXMLLargeTextField {
+.content_type_colM fieldset.wide .vLargeTextField, .content_type_colM fieldset.wide .vXMLLargeTextField {
     width: 450px;
 }
 

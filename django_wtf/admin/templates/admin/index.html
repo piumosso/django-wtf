@@ -1,13 +1,23 @@
 {% extends "admin/base_site.html" %}
+
+
 {% load i18n admin_static %}
 
-{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/dashboard.css" %}" />{% endblock %}
 
-{% block coltype %}content_colMS{% endblock %}
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/dashboard.css" %}" />
+{% endblock %}
+
 
 {% block bodyclass %}m-dashboard{% endblock %}
 
+
+{% block coltype %}content_type_colMS{% endblock %}
+
+
 {% block breadcrumbs %}{% endblock %}
+
 
 {% block content %}
 <section class="content__main">
