@@ -9,3 +9,4 @@
 *.pyc
 /log.txt
 .DS_Store
+/tests/database
