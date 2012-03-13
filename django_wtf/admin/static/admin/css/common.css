@@ -299,9 +299,7 @@ body {
 .module blockquote {
     margin-left: 12px;
 }
-
 /*
-
 .module p, .module ul, .module h3, .module h4, .module dl, .module pre {
     padding-left: 10px;
     padding-right: 10px;
@@ -315,7 +313,7 @@ body {
     margin-top: .6em;
 }
 
-.module h2, .module caption, .inline-group h2 {
+.inline-group h2 {
     margin: 0;
     padding: 2px 5px 3px 5px;
     font-size: 11px;
@@ -324,6 +322,4 @@ body {
     background: #7CA0C7 url(../img/default-bg.gif) top left repeat-x;
     color: white;
 }
-
-
 */
