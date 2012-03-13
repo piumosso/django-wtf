@@ -28,7 +28,7 @@
 
 /* IE ignores min-height, but treats height as if it were min-height */
 
-.change-list .filtered {
+.m-change-list .filtered {
     _height: 400px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 /* IE7 doesn't support inline-block */
-.change-list ul.toplinks li {
+.m-change-list ul.toplinks li {
     zoom: 1;
     *display: inline;
 }

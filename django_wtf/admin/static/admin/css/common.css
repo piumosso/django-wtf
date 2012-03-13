@@ -323,3 +323,74 @@ body {
     color: white;
 }
 */
+
+
+/**
+ * @section     Object tools (add item link e.g.)
+ */
+
+.object-tools {
+    position: relative;
+    margin-top: -2.4em;
+    margin-bottom: -2em;
+    float: right;
+    padding-left: 0;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.rtl .object-tools {
+    float: left;
+}
+.form-row .object-tools {
+    height: 2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 3.5em;
+    float: none;
+}
+.object-tools__action {
+    display: block;
+    height: 16px;
+    margin-left: 2px;
+    padding: 0 0 0 8px;
+    float: left;
+    background: url(../img/tool-left.gif) 0 0 no-repeat;
+}
+.object-tools__action:hover {
+    background: url(../img/tool-left_over.gif) 0 0 no-repeat;
+}
+.object-tools__action-wrapper {
+    display: block;
+    padding: .1em 14px .1em 8px;
+    height: 14px;
+    float: left;
+    color: white;
+    font-size: 11px;
+    background: #999 url(../img/tool-right.gif) 100% 0 no-repeat;
+}
+.object-tools__action:hover .object-tools__action-wrapper {
+    background: #5b80b2 url(../img/tool-right_over.gif) 100% 0 no-repeat;
+}
+
+
+/**
+ * @subsection  Object tools action modifiers
+ */
+
+.object-tools__action_add .object-tools__action-wrapper {
+    background: #999 url(../img/tooltag-add.gif) top right no-repeat;
+    padding-right: 28px;
+}
+.object-tools__action_add:hover .object-tools__action-wrapper {
+    background: #5b80b2 url(../img/tooltag-add_over.gif) top right no-repeat;
+}
+.object-tools__action_viewsite .object-tools__action-wrapper,
+.object-tools__action_go .object-tools__action-wrapper {
+    background: #999 url(../img/tooltag-arrowright.gif) top right no-repeat;
+    padding-right: 28px;
+}
+.object-tools__action_viewsite:hover .object-tools__action-wrapper,
+.object-tools__action_go:hover .object-tools__action-wrapper {
+    background: #5b80b2 url(../img/tooltag-arrowright_over.gif) top right no-repeat;
+}

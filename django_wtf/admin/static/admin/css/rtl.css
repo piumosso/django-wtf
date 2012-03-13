@@ -42,9 +42,6 @@ th {
     background-position: 100% 0.25em;
 }
 
-.object-tools {
-    float: left;
-}
 
 thead th:first-child,
 tfoot td:first-child {
@@ -72,11 +69,11 @@ table thead th.sorted .sortoptions {
 
 /* changelists styles */
 
-.change-list .filtered {
+.m-change-list .filtered {
     background: white url(../img/changelist-bg_rtl.gif) top left repeat-y !important;
 }
 
-.change-list .filtered table {
+.m-change-list .filtered table {
     border-left: 1px solid #ddd;
     border-right: 0px none;
 }
@@ -88,7 +85,7 @@ table thead th.sorted .sortoptions {
     border-right: 1px solid #ddd;
 }
 
-.change-list .filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
+.m-change-list .filtered .results, .m-change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
     margin-right: 0px !important;
     margin-left: 160px !important;
 }

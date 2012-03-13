@@ -9,26 +9,26 @@
     width: 100%;
 }
 
-.change-list .hiddenfields { display:none; }
+.m-change-list .hiddenfields { display:none; }
 
-.change-list .filtered table {
+.m-change-list .filtered table {
     border-right: 1px solid #ddd;
 }
 
-.change-list .filtered {
+.m-change-list .filtered {
     min-height: 400px;
 }
 
-.change-list .filtered {
+.m-change-list .filtered {
     background: white url(../img/changelist-bg.gif) top right repeat-y !important;
 }
 
-.change-list .filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
+.m-change-list .filtered .results, .m-change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
     margin-right: 160px !important;
     width: auto !important;
 }
 
-.change-list .filtered table tbody th {
+.m-change-list .filtered table tbody th {
     padding-right: 1em;
 }
 
@@ -44,7 +44,7 @@
     overflow: hidden;
 }
 
-.change-list .filtered .paginator {
+.m-change-list .filtered .paginator {
     border-right: 1px solid #ddd;
 }
 
@@ -155,7 +155,7 @@
 
 /* DATE DRILLDOWN */
 
-.change-list ul.toplinks {
+.m-change-list ul.toplinks {
     display: block;
     background: white url(../img/nav-bg-reverse.gif) 0 -10px repeat-x;
     border-top: 1px solid white;
@@ -165,18 +165,18 @@
     width: 100%;
 }
 
-.change-list ul.toplinks li {
+.m-change-list ul.toplinks li {
     padding: 3px 6px;
     font-weight: bold;
     list-style-type: none;
     display: inline-block;
 }
 
-.change-list ul.toplinks .date-back a {
+.m-change-list ul.toplinks .date-back a {
     color: #999;
 }
 
-.change-list ul.toplinks .date-back a:hover {
+.m-change-list ul.toplinks .date-back a:hover {
     color: #036;
 }
 

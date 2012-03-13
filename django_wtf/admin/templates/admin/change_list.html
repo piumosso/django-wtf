@@ -1,41 +1,48 @@
 {% extends "admin/base_site.html" %}
+
+
 {% load i18n admin_static admin_list %}
 {% load url from future %}
 {% load admin_urls %}
 
+
 {% block extrastyle %}
-  {{ block.super }}
-  <link rel="stylesheet" type="text/css" href="{% static "admin/css/changelists.css" %}" />
-  {% if cl.formset %}
-    <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
-  {% endif %}
-  {% if cl.formset or action_form %}
-    {% url 'admin:jsi18n' as jsi18nurl %}
-    <script type="text/javascript" src="{{ jsi18nurl|default:'../../jsi18n/' }}"></script>
-  {% endif %}
-  {{ media.css }}
-  {% if not actions_on_top and not actions_on_bottom %}
-    <style>
-      #changelist table thead th:first-child {width: inherit}
-    </style>
-  {% endif %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/changelists.css" %}" />
+    {% if cl.formset %}
+        <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
+    {% endif %}
+    {{ media.css }}
+    {% if not actions_on_top and not actions_on_bottom %}
+        <style>
+            #changelist table thead th:first-child {width: inherit}
+        </style>
+    {% endif %}
 {% endblock %}
 
-{% block extrahead %}
-{{ block.super }}
-{{ media.js }}
-{% if action_form %}{% if actions_on_top or actions_on_bottom %}
-<script type="text/javascript">
-(function($) {
-    $(document).ready(function($) {
-        $("tr input.action-select").actions();
-    });
-})(django.jQuery);
-</script>
-{% endif %}{% endif %}
+
+{% block extrajavascript %}
+    {% if cl.formset or action_form %}
+        {% url 'admin:jsi18n' as jsi18nurl %}
+        <script type="text/javascript" src="{{ jsi18nurl|default:'../../jsi18n/' }}"></script>
+    {% endif %}
+    {{ media.js }}
+    {% if action_form %}
+        {% if actions_on_top or actions_on_bottom %}
+            <script type="text/javascript">
+                (function($) {
+                    $(document).ready(function($) {
+                        $('tr input.action-select').actions();
+                    });
+                })(django.jQuery);
+            </script>
+        {% endif %}
+    {% endif %}
 {% endblock %}
 
-{% block bodyclass %}change-list{% endblock %}
+
+{% block bodyclass %}m-change-list{% endblock %}
+
 
 {% if not is_popup %}
     {% block breadcrumbs %}
@@ -49,23 +56,29 @@
     {% endblock %}
 {% endif %}
 
+
 {% block coltype %}content_type_flex{% endblock %}
+
 
 {% block content %}
     <section class="content__main">
-    {% block object-tools %}
-      {% if has_add_permission %}
-        <ul class="object-tools">
-          {% block object-tools-items %}
-            <li>
-              <a href="{% url cl.opts|admin_urlname:'add' %}{% if is_popup %}?_popup=1{% endif %}" class="addlink">
-                {% blocktrans with cl.opts.verbose_name as name %}Add {{ name }}{% endblocktrans %}
-              </a>
-            </li>
-          {% endblock %}
-        </ul>
-      {% endif %}
-    {% endblock %}
+        {% block object-tools %}
+            {% if has_add_permission %}
+                <aside class="object-tools">
+                    {% block object-tools-items %}
+                        <a href="{% url cl.opts|admin_urlname:'add' %}{% if is_popup %}?_popup=1{% endif %}"
+                           class="object-tools__action object-tools__action_add">
+                            <span class="object-tools__action-wrapper">
+                                {% blocktrans with cl.opts.verbose_name as name %}
+                                    Add {{ name }}
+                                {% endblocktrans %}
+                            </span>
+                        </a>
+                    {% endblock %}
+                </aside>
+            {% endif %}
+        {% endblock %}
+
     {% if cl.formset.errors %}
         <p class="errornote">
         {% blocktrans count cl.formset.errors|length as counter %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktrans %}
