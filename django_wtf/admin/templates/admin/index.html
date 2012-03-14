@@ -60,7 +60,7 @@
 
 {% block sidebar %}
 <section class="content__related module">
-    <h1 class="module__header">{% trans 'Recent Actions' %}</h1>
+    <h1 class="module__header module__header_light">{% trans 'Recent Actions' %}</h1>
     <h2 class="module__subheader">{% trans 'My Actions' %}</h2>
         {% load log %}
         {% get_admin_log 10 as admin_log for_user user %}

@@ -17,6 +17,8 @@
 
 .module ul.actionlist {
     margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 ul.actionlist li {

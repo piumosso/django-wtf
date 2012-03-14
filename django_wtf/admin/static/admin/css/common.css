@@ -284,6 +284,10 @@ body {
     color: white;
     background: url("../img/default-bg.gif") repeat-x scroll left top #7CA0C7;
 }
+.module__header_light {
+    color: #666666;
+    background: url("../img/nav-bg.gif") repeat-x scroll left bottom #EEEEEE;
+}
 .module__subheader {
     margin-top: 0.6em;
     margin-bottom: 3px;
