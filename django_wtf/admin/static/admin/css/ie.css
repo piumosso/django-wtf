@@ -22,9 +22,7 @@
 
 /* Fix right margin for changelist filters in IE6 */
 
-#changelist-filter ul {
-    _margin-right: -10px;
-}
+
 
 /* IE ignores min-height, but treats height as if it were min-height */
 

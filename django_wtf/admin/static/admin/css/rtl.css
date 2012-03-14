@@ -78,26 +78,13 @@ table thead th.sorted .sortoptions {
     border-right: 0px none;
 }
 
-#changelist-filter {
-    right: auto;
-    left: 0;
-    border-left: 0px none;
-    border-right: 1px solid #ddd;
-}
 
 .m-change-list .filtered .results, .m-change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
     margin-right: 0px !important;
     margin-left: 160px !important;
 }
 
-#changelist-filter li.selected {
-    border-left: 0px none;
-    padding-left: 0px;
-    margin-left: 0;
-    border-right: 5px solid #ccc;
-    padding-right: 5px;
-    margin-right: -10px;
-}
+
 
 .filtered .actions {
     border-left:1px solid #DDDDDD;
