@@ -481,3 +481,23 @@ body {
 .filter__item_selected .filter__item-link {
     color: #5b80b2 !important;
 }
+
+
+/**
+ * @section     Errors
+ */
+
+.form-errors-occurred {
+    display: block;
+    padding: 4px 5px 4px 25px;
+    margin: 0 0 3px 0;
+    line-height: 140%;
+    font-size: 12px !important;
+    color: red;
+    border: 1px solid red;
+    background: #ffc url(../img/icon_error.gif) 5px .3em no-repeat;
+}
+.rtl .form-errors-occurred {
+    background-position: 100% .3em;
+    padding: 4px 25px 4px 5px;
+}

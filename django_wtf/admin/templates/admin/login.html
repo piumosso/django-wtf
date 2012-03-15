@@ -14,17 +14,21 @@
 
 {% block content %}
 {% if form.errors and not form.non_field_errors and not form.this_is_the_login_form.errors %}
-<p class="errornote">
-{% blocktrans count counter=form.errors.items|length %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktrans %}
-</p>
+    <div class="form-errors-occurred">
+        {% blocktrans count counter=form.errors.items|length %}
+            Please correct the error below.
+        {% plural %}
+            Please correct the errors below.
+        {% endblocktrans %}
+    </div>
 {% endif %}
 
 {% if form.non_field_errors or form.this_is_the_login_form.errors %}
-{% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
-<p class="errornote">
-    {{ error }}
-</p>
-{% endfor %}
+    {% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+        <div class="form-errors-occurred">
+            {{ error }}
+        </div>
+    {% endfor %}
 {% endif %}
 
 <section class="content__main">
