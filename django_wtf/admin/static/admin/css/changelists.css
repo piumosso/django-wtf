@@ -2,15 +2,11 @@
 
 
 
-#changelist table {
-    width: 100%;
-}
+
 
 .m-change-list .hiddenfields { display:none; }
 
-.m-change-list .change-list__filtered table {
-    border-right: 1px solid #ddd;
-}
+
 
 .m-change-list .change-list__filtered {
     min-height: 400px;
@@ -58,10 +54,6 @@
 #changelist table thead th.action-checkbox-column {
     width: 1.5em;
     text-align: center;
-}
-
-#changelist table tbody td, #changelist table tbody th {
-    border-left: 1px solid #ddd;
 }
 
 #changelist table tbody td:first-child, #changelist table tbody th:first-child {

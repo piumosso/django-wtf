@@ -73,10 +73,7 @@ table thead th.sorted .sortoptions {
     background: white url(../img/changelist-bg_rtl.gif) top left repeat-y !important;
 }
 
-.m-change-list .change-list__filtered table {
-    border-left: 1px solid #ddd;
-    border-right: 0px none;
-}
+
 
 
 .m-change-list .change-list__filtered .paginator,

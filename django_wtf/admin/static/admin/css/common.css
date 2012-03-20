@@ -516,4 +516,35 @@ body {
     margin-right: 0 !important;
     margin-left: 160px !important;
 }
-.results__list {}
+.results__list {
+    width: 100%;
+}
+.change-list__filtered .results__list {
+    border-right: 1px solid #ddd;
+}
+.rtl .change-list__filtered .results__list {
+    border-left: 1px solid #ddd;
+    border-right: 0 none;
+}
+.results__item {}
+.results__item_odd {
+    background: #EDF3FE;
+}
+.results__item_even {
+    background: white;
+}
+.results__item td,
+.results__item th {
+    padding: 5px;
+    line-height: 13px;
+    vertical-align: top;
+    font-size: 11px;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #ddd;
+}
+.results__item th {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}

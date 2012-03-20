@@ -48,11 +48,11 @@
         <tbody>
             {% for result in results %}
                 {% if result.form.non_field_errors %}
-                    <tr>
+                    <tr class="results__item">
                         <td colspan="{{ result|length }}">{{ result.form.non_field_errors }}</td>
                     </tr>
                 {% endif %}
-                <tr class="{% cycle 'row1' 'row2' %}">
+                <tr class="results__item {% cycle 'results__item_odd' 'results__item_even' %}">
                     {% for item in result %}
                         {{ item }}
                     {% endfor %}
