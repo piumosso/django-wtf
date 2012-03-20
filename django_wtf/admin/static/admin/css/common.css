@@ -501,3 +501,19 @@ body {
     background-position: 100% .3em;
     padding: 4px 25px 4px 5px;
 }
+
+
+/**
+ * @section     Result list
+ */
+
+.results {}
+.change-list__filtered .results {
+    margin-right: 160px !important;
+    width: auto !important;
+}
+.rtl .change-list__filtered .results {
+    margin-right: 0 !important;
+    margin-left: 160px !important;
+}
+.results__list {}

@@ -69,24 +69,26 @@ table thead th.sorted .sortoptions {
 
 /* changelists styles */
 
-.m-change-list .filtered {
+.m-change-list .change-list__filtered {
     background: white url(../img/changelist-bg_rtl.gif) top left repeat-y !important;
 }
 
-.m-change-list .filtered table {
+.m-change-list .change-list__filtered table {
     border-left: 1px solid #ddd;
     border-right: 0px none;
 }
 
 
-.m-change-list .filtered .results, .m-change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
+.m-change-list .change-list__filtered .paginator,
+.change-list__filtered #toolbar,
+.change-list__filtered div.xfull {
     margin-right: 0px !important;
     margin-left: 160px !important;
 }
 
 
 
-.filtered .actions {
+.change-list__filtered .actions {
     border-left:1px solid #DDDDDD;
     margin-left:160px !important;
     border-right: 0 none;

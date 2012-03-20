@@ -8,24 +8,26 @@
 
 .m-change-list .hiddenfields { display:none; }
 
-.m-change-list .filtered table {
+.m-change-list .change-list__filtered table {
     border-right: 1px solid #ddd;
 }
 
-.m-change-list .filtered {
+.m-change-list .change-list__filtered {
     min-height: 400px;
 }
 
-.m-change-list .filtered {
+.m-change-list .change-list__filtered {
     background: white url(../img/changelist-bg.gif) top right repeat-y !important;
 }
 
-.m-change-list .filtered .results, .m-change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
+.m-change-list .change-list__filtered .paginator,
+.change-list__filtered #toolbar,
+.change-list__filtered div.xfull {
     margin-right: 160px !important;
     width: auto !important;
 }
 
-.m-change-list .filtered table tbody th {
+.m-change-list .change-list__filtered table tbody th {
     padding-right: 1em;
 }
 
@@ -41,7 +43,7 @@
     overflow: hidden;
 }
 
-.m-change-list .filtered .paginator {
+.m-change-list .change-list__filtered .paginator {
     border-right: 1px solid #ddd;
 }
 
@@ -173,7 +175,7 @@
 
 /* ACTIONS */
 
-.filtered .actions {
+.change-list__filtered .actions {
     margin-right: 160px !important;
     border-right: 1px solid #ddd;
 }

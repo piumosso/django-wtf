@@ -2,7 +2,7 @@
 
 
 {% if result_hidden_fields %}
-    <div class="hiddenfields">{# DIV for HTML validation #}
+    <div class="hiddenfields">
         {% for item in result_hidden_fields %}
             {{ item }}
         {% endfor %}
@@ -10,8 +10,8 @@
 {% endif %}
 
 {% if results %}
-<div class="results">
-    <table id="result_list">
+<section class="results">
+    <table class="results__list">
         <thead>
             <tr>
                 {% for header in result_headers %}
@@ -60,5 +60,5 @@
             {% endfor %}
         </tbody>
     </table>
-</div>
+</section>
 {% endif %}

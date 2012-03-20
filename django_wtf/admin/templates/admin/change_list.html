@@ -90,7 +90,7 @@
             {{ cl.formset.non_form_errors }}
         {% endif %}
 
-        <section class="changelist module {% if cl.has_filters %}filtered{% endif %}" id="changelist">
+        <section class="changelist module {% if cl.has_filters %}change-list__filtered{% endif %}" id="changelist">
             {% block search %}
                 {% search_form cl %}
             {% endblock %}

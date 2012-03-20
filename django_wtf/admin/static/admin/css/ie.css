@@ -26,7 +26,7 @@
 
 /* IE ignores min-height, but treats height as if it were min-height */
 
-.m-change-list .filtered {
+.m-change-list .change-list__filtered {
     _height: 400px;
 }
 

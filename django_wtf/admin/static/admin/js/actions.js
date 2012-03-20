@@ -101,7 +101,7 @@
 			lastChecked = target;
 			updateCounter();
 		});
-		$('form.changelist__form table#result_list tr').find('td:gt(0) :input').change(function() {
+		$('form.changelist__form table.results__list tr').find('td:gt(0) :input').change(function() {
 			list_editable_changed = true;
 		});
 		$('form.changelist__form button[name="index"]').click(function(event) {
