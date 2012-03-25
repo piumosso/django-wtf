@@ -38,11 +38,11 @@
                                 </div>
                             {% endif %}
                         {% endif %}
-                        <div class="text">
+                        <div class="results__column-name">
                             {% if header.sortable %}
-                                <a href="{{ header.url_primary }}">{{ header.text|capfirst }}</a>
+                                <a class="results__column-name-link" href="{{ header.url_primary }}">{{ header.text|capfirst }}</a>
                             {% else %}
-                                <span>{{ header.text|capfirst }}</span>
+                                <span class="results__column-name-text">{{ header.text|capfirst }}</span>
                             {% endif %}
                         </div>
                         <div class="g-clear"></div>

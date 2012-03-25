@@ -535,6 +535,17 @@ body {
     border-left: 1px solid #ddd;
     border-right: 0 none;
 }
+.results__column-name {}
+.results__column-name-text {
+    padding: 2px 5px;
+    display:block;
+}
+.results__column-name-link {
+    display: block;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
 .results__item {}
 .results__item_odd {
     background: #EDF3FE;
