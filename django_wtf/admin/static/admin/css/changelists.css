@@ -39,25 +39,7 @@
 
 /* CHANGELIST TABLES */
 
-#changelist table thead th {
-    padding: 0;
-    white-space: nowrap;
-    vertical-align: middle;
-}
 
-#changelist table thead th.action-checkbox-column {
-    width: 1.5em;
-    text-align: center;
-}
-
-#changelist table tbody td:first-child, #changelist table tbody th:first-child {
-    border-left: 0;
-    border-right: 1px solid #ddd;
-}
-
-#changelist table tbody td.action-checkbox {
-    text-align:center;
-}
 
 #changelist table tfoot {
     color: #666;
