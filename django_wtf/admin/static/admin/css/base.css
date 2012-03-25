@@ -322,61 +322,10 @@ table thead th .text a {
     padding: 2px 5px;
 }
 
-table thead th.sortable:hover {
-    background: white url(../img/nav-bg-reverse.gif) 0 -5px repeat-x;
-}
 
-thead th.sorted a.sortremove {
-    visibility: hidden;
-}
 
-table thead th.sorted:hover a.sortremove {
-    visibility: visible;
-}
 
-table thead th.sorted .sortoptions {
-    display: block;
-    padding: 4px 5px 0 5px;
-    float: right;
-    text-align: right;
-}
 
-table thead th.sorted .sortpriority {
-    font-size: .8em;
-    min-width: 12px;
-    text-align: center;
-    vertical-align: top;
-}
-
-table thead th.sorted .sortoptions a {
-    width: 14px;
-    height: 12px;
-    display: inline-block;
-}
-
-table thead th.sorted .sortoptions a.sortremove {
-    background: url(../img/sorting-icons.gif) -4px -5px no-repeat;
-}
-
-table thead th.sorted .sortoptions a.sortremove:hover {
-    background: url(../img/sorting-icons.gif) -4px -27px no-repeat;
-}
-
-table thead th.sorted .sortoptions a.ascending {
-    background: url(../img/sorting-icons.gif) -5px -50px no-repeat;
-}
-
-table thead th.sorted .sortoptions a.ascending:hover {
-    background: url(../img/sorting-icons.gif) -5px -72px no-repeat;
-}
-
-table thead th.sorted .sortoptions a.descending {
-    background: url(../img/sorting-icons.gif) -5px -94px no-repeat;
-}
-
-table thead th.sorted .sortoptions a.descending:hover {
-    background: url(../img/sorting-icons.gif) -5px -115px no-repeat;
-}
 
 /* ORDERABLE TABLES */
 
