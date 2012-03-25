@@ -535,6 +535,35 @@ body {
     border-left: 1px solid #ddd;
     border-right: 0 none;
 }
+
+
+/**
+ * @subsection  Results header
+ * Cascade is used because of the violation mvc pattern in Django
+ */
+
+.results__header th {
+    padding: 2px 5px;
+    color: #666666;
+    font-size: 11px;
+    line-height: normal;
+    background: #e1e1e1 url(../img/nav-bg.gif) top left repeat-x;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.results__header th:first-child {
+    border-left: none !important;
+}
+.results__header th.optional {
+    font-weight: normal !important;
+}
+.results__header th a:link,
+.results__header th a:visited {
+    color: #666666;
+}
+.results__header th.sorted {
+    background: #c5c5c5 url(../img/nav-bg-selected.gif) top left repeat-x;
+}
 .results__column-name {}
 .results__column-name-text {
     padding: 2px 5px;
@@ -545,6 +574,11 @@ body {
     cursor: pointer;
     padding: 2px 5px;
 }
+
+
+/**
+ * @subsection  Results items
+ */
 
 .results__item {}
 .results__item_odd {
@@ -627,6 +661,7 @@ body {
 
 /**
  * @section     Paginator
+ * Cascade is used because of the violation mvc pattern in Django
  */
 
 .paginator {

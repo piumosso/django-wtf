@@ -12,7 +12,7 @@
 {% if results %}
 <section class="results">
     <table class="results__list">
-        <thead>
+        <thead class="results__header">
             <tr>
                 {% for header in result_headers %}
                     <th scope="col" {{ header.class_attrib }}>

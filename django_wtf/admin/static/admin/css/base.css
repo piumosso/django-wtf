@@ -244,7 +244,6 @@ th {
     font-weight: bold;
 }
 
-thead th,
 tfoot td {
     color: #666;
     padding: 2px 5px;
@@ -259,14 +258,10 @@ tfoot td {
     border-top: 1px solid #ddd;
 }
 
-thead th:first-child,
 tfoot td:first-child {
     border-left: none !important;
 }
 
-thead th.optional {
-    font-weight: normal !important;
-}
 
 fieldset table {
     border-right: 1px solid #eee;
@@ -292,24 +287,6 @@ tr.alt {
 .row2 {
     background: white;
 }
-
-/* SORTABLE TABLES */
-
-thead th {
-    padding: 2px 5px;
-    line-height: normal;
-}
-
-thead th a:link, thead th a:visited {
-    color: #666;
-}
-
-thead th.sorted {
-    background: #c5c5c5 url(../img/nav-bg-selected.gif) top left repeat-x;
-}
-
-
-
 
 
 
