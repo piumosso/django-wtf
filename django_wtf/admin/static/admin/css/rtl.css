@@ -56,9 +56,6 @@ tfoot td:first-child {
 
 /* SORTABLE TABLES */
 
-table thead th.sorted .sortoptions {
-   float: left;
-}
 
 /* dashboard styles */
 

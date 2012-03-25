@@ -563,6 +563,9 @@ body {
     float: right;
     text-align: right;
 }
+.rtl .sortoptions {
+    float: left;
+}
 .sorted .sort-options {
     display: block;
 }
