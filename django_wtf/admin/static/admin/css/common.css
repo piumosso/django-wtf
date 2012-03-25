@@ -11,6 +11,15 @@
 
 
 /**
+ * @section     Common elements
+ */
+
+.g-clear {
+    clear: both;
+}
+
+
+/**
  * @section     Wrapers
  */
 

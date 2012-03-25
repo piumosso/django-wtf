@@ -203,9 +203,6 @@ p img, h1 img, h2 img, h3 img, h4 img, td img {
     float: left;
 }
 
-.clear {
-    clear: both;
-}
 
 .align-left {
     text-align: left;
