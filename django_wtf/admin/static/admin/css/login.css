@@ -1,23 +1,23 @@
 /* LOGIN FORM */
 
-body.login {
+.m-login {
     background: #eee;
 }
 
 
 
 
-.login form {
+.m-login form {
     margin-top: 1em;
 }
 
-.login .form-row {
+.m-login .form-row {
     padding: 4px 0;
     float: left;
     width: 100%;
 }
 
-.login .form-row label {
+.m-login .form-row label {
     float: left;
     width: 9em;
     padding-right: 0.5em;
@@ -27,15 +27,15 @@ body.login {
     color: #333;
 }
 
-.login .form-row #id_username, .login .form-row #id_password {
+.m-login .form-row #id_username, .m-login .form-row #id_password {
     width: 14em;
 }
 
-.login span.help {
+.m-login span.help {
     font-size: 10px;
     display: block;
 }
 
-.login .password-reset-link {
+.m-login .password-reset-link {
     text-align: center;
 }

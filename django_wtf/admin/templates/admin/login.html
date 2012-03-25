@@ -1,16 +1,19 @@
 {% extends "admin/base_site.html" %}
+
 {% load i18n admin_static %}
 {% load url from future %}
 
+
 {% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/login.css" %}" />{% endblock %}
 
-{% block bodyclass %}login{% endblock %}
+
+{% block bodyclass %}m-login{% endblock %}
+
 
 {% block nav-global %}{% endblock %}
-
 {% block content_title %}{% endblock %}
-
 {% block breadcrumbs %}{% endblock %}
+
 
 {% block content %}
 {% if form.errors and not form.non_field_errors and not form.this_is_the_login_form.errors %}

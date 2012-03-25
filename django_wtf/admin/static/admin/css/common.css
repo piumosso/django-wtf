@@ -40,7 +40,7 @@ body {
 .ie6 .container {
     position: static;
 }
-.login .container {
+.m-login .container {
     width: 28em;
     min-width: 300px;
     margin: 100px auto 0;
@@ -208,7 +208,7 @@ body {
 .rtl .content__main {
     float: right;
 }
-.login .content__main {
+.m-login .content__main {
     width: 100%;
 }
 .lt-ie8 .m-dashboard #content-main {
@@ -761,11 +761,11 @@ body {
 .m-popup .form-submit {
     overflow: auto;
 }
-.login .form-submit {
+.m-login .form-submit {
     clear: both;
     padding: 1em 0 0 9.4em;
 }
-.rtl .login .form-submit {
+.rtl .m-login .form-submit {
     clear: both;
     padding: 1em 9.4em 0 0;
 }
