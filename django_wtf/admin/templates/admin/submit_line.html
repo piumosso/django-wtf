@@ -1,8 +1,38 @@
 {% load i18n %}
-<div class="submit-row">
-{% if show_save %}<input type="submit" value="{% trans 'Save' %}" class="default" name="_save" {{ onclick_attrib }}/>{% endif %}
-{% if show_delete_link %}<p class="deletelink-box"><a href="delete/" class="deletelink">{% trans "Delete" %}</a></p>{% endif %}
-{% if show_save_as_new %}<input type="submit" value="{% trans 'Save as new' %}" name="_saveasnew" {{ onclick_attrib }}/>{%endif%}
-{% if show_save_and_add_another %}<input type="submit" value="{% trans 'Save and add another' %}" name="_addanother" {{ onclick_attrib }} />{% endif %}
-{% if show_save_and_continue %}<input type="submit" value="{% trans 'Save and continue editing' %}" name="_continue" {{ onclick_attrib }}/>{% endif %}
+
+
+<div class="form-submit">
+    {% if show_save %}
+        <input type="submit"
+               value="{% trans 'Save' %}"
+               class="form-submit__input form-submit__input_default"
+               name="_save"
+               {{ onclick_attrib }}/>
+    {% endif %}
+    {% if show_delete_link %}
+        <p class="form-submit__delete-wrapper">
+            <a href="delete/" class="form-submit__delete">{% trans "Delete" %}</a>
+        </p>
+    {% endif %}
+    {% if show_save_as_new %}
+        <input type="submit"
+               value="{% trans 'Save as new' %}"
+               class="form-submit__input"
+               name="_saveasnew"
+               {{ onclick_attrib }}/>
+    {% endif %}
+    {% if show_save_and_add_another %}
+        <input type="submit"
+               value="{% trans 'Save and add another' %}"
+               class="form-submit__input"
+               name="_addanother"
+               {{ onclick_attrib }} />
+    {% endif %}
+    {% if show_save_and_continue %}
+        <input type="submit"
+               value="{% trans 'Save and continue editing' %}"
+               class="form-submit__input"
+               name="_continue"
+               {{ onclick_attrib }}/>
+    {% endif %}
 </div>

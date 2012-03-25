@@ -15,11 +15,6 @@ body {
     text-align: left;
 }
 
-.login .submit-row {
-    clear: both;
-    padding: 1em 9.4em 0 0;
-}
-
 /* GLOBAL */
 
 th {
@@ -101,18 +96,6 @@ tfoot td:first-child {
     float: right;
 }
 
-.submit-row {
-    text-align: left
-}
-
-.submit-row p.deletelink-box {
-    float: right;
-}
-
-.submit-row .deletelink {
-    background: url(../img/icon_deletelink.gif) 0 50% no-repeat;
-    padding-right: 14px;
-}
 
 .vDateField, .vTimeField {
     margin-left: 2px;
@@ -124,7 +107,7 @@ form ul.inline li {
     padding-left: 7px;
 }
 
-input[type=submit].default, .submit-row input.default {
+input[type=submit].default {
     float: left;
 }
 
@@ -186,11 +169,4 @@ fieldset .field-box {
 .inline-related h3 span.delete label {
     margin-left: inherit;
     margin-right: 2px;
-}
-
-/* IE7 specific bug fixes */
-
-
-.submit-row input {
-    float: left;
 }

@@ -49,9 +49,12 @@
     <a href="{{ password_reset_url }}">{% trans 'Forgotten your password or username?' %}</a>
   </div>
   {% endif %}
-  <div class="submit-row">
-    <label>&nbsp;</label><input type="submit" value="{% trans 'Log in' %}" />
-  </div>
+    <div class="form-submit">
+        <label>&nbsp;</label>
+        <input type="submit"
+               value="{% trans 'Log in' %}"
+               class="form-submit__input" />
+    </div>
 </form>
 
 <script type="text/javascript">

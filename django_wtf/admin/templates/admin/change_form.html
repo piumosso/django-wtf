@@ -69,47 +69,59 @@
             {% endif %}
         {% endblock %}
 
-        <form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.module_name }}_form">{% csrf_token %}{% block form_top %}{% endblock %}
-        <div>
-        {% if is_popup %}<input type="hidden" name="_popup" value="1" />{% endif %}
-        {% if save_on_top %}{% block submit_buttons_top %}{% submit_row %}{% endblock %}{% endif %}
-        {% if errors %}
-            <div class="form-errors-occurred">
-                {% blocktrans count counter=errors|length %}
-                    Please correct the error below.
-                {% plural %}
-                    Please correct the errors below.
-                {% endblocktrans %}
-            </div>
-            {{ adminform.form.non_field_errors }}
-        {% endif %}
+        <form class="form" {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.module_name }}_form">
+            {% csrf_token %}
 
-        {% block field_sets %}
-        {% for fieldset in adminform %}
-          {% include "admin/includes/fieldset.html" %}
-        {% endfor %}
-        {% endblock %}
+            {% block form_top %}{% endblock %}
 
-        {% block after_field_sets %}{% endblock %}
+            {% if is_popup %}
+                <input type="hidden" name="_popup" value="1" />
+            {% endif %}
 
-        {% block inline_field_sets %}
-        {% for inline_admin_formset in inline_admin_formsets %}
-            {% include inline_admin_formset.opts.template %}
-        {% endfor %}
-        {% endblock %}
+            {% if save_on_top %}
+                {% block submit_buttons_top %}
+                    {% submit_row %}
+                {% endblock %}
+            {% endif %}
 
-        {% block after_related_objects %}{% endblock %}
+            {% if errors %}
+                <div class="form-errors-occurred">
+                    {% blocktrans count counter=errors|length %}
+                        Please correct the error below.
+                    {% plural %}
+                        Please correct the errors below.
+                    {% endblocktrans %}
+                </div>
+                {{ adminform.form.non_field_errors }}
+            {% endif %}
 
-        {% block submit_buttons_bottom %}{% submit_row %}{% endblock %}
+            {% block field_sets %}
+                {% for fieldset in adminform %}
+                    {% include "admin/includes/fieldset.html" %}
+                {% endfor %}
+            {% endblock %}
 
-        {% if adminform and add %}
-           <script type="text/javascript">document.getElementById("{{ adminform.first_field.id_for_label }}").focus();</script>
-        {% endif %}
+            {% block after_field_sets %}{% endblock %}
 
-        {# JavaScript for prepopulated fields #}
-        {% prepopulated_fields_js %}
+            {% block inline_field_sets %}
+                {% for inline_admin_formset in inline_admin_formsets %}
+                    {% include inline_admin_formset.opts.template %}
+                {% endfor %}
+            {% endblock %}
 
-        </div>
+            {% block after_related_objects %}{% endblock %}
+
+            {% block submit_buttons_bottom %}
+                {% submit_row %}
+            {% endblock %}
+
+            {% if adminform and add %}
+                <script type="text/javascript">
+                    document.getElementById("{{ adminform.first_field.id_for_label }}").focus();
+                </script>
+            {% endif %}
+
+            {% prepopulated_fields_js %}
         </form>
     </section>
 {% endblock %}

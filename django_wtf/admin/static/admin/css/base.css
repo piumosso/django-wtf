@@ -328,7 +328,8 @@ input[type=text], input[type=password], textarea, select, .vTextField {
 
 /* FORM BUTTONS */
 
-.button, input[type=submit], input[type=button], .submit-row input {
+.button, input[type=submit],
+input[type=button] {
     background: white url(../img/nav-bg.gif) bottom repeat-x;
     padding: 3px 5px;
     color: black;
@@ -347,7 +348,7 @@ input[type=text], input[type=password], textarea, select, .vTextField {
 	opacity: 0.4;
 }
 
-.button.default, input[type=submit].default, .submit-row input.default {
+.button.default, input[type=submit].default, .form-submit input.default {
     border: 2px solid #5b80b2;
     background: #7CA0C7 url(../img/default-bg.gif) bottom repeat-x;
     font-weight: bold;
