@@ -809,3 +809,49 @@ body {
 .rtl .form-submit__delete {
     padding-right: 14px;
 }
+
+
+/**
+ * @section     Object change history
+ */
+
+.change-history {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: #ccc;
+}
+.change-history__header {
+    padding: 5px;
+    line-height: 13px;
+    vertical-align: top;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    border-bottom: 1px solid #eee;
+}
+.change-history__date {
+    width: 16em;
+    padding: 5px;
+    line-height: 13px;
+    vertical-align: top;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    border-bottom: 1px solid #eee;
+}
+.change-history__user,
+.change-history__action {
+    padding: 5px;
+    line-height: 13px;
+    vertical-align: top;
+    font-size: 11px;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    border-bottom: 1px solid #eee;
+}
+.change-history__empty {
+    margin: 0.2em 0 0.8em;
+    padding: 0;
+    line-height: 140%;
+}
