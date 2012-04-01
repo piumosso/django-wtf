@@ -23,6 +23,7 @@ class ModelAdmin(admin.ModelAdmin):
             'fields': ('file', 'file_path', 'image'),
         }),
     )
+    readonly_fields = ('decimal',)
 
 
 admin.site.register(Model, ModelAdmin)

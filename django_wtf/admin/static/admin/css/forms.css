@@ -8,10 +8,7 @@
     vertical-align: middle;
 }
 
-form .form__row p {
-    padding-left: 0;
-    font-size: 11px;
-}
+
 
 /* FORM LABELS */
 
@@ -55,12 +52,6 @@ form ul.inline li {
 
 /* ALIGNED FIELDSETS */
 
-.aligned label {
-    display: block;
-    padding: 3px 10px 0 0;
-    float: left;
-    width: 8em;
-}
 
 .aligned ul label {
     display: inline;

@@ -786,7 +786,8 @@ body {
 .form__row_errors {
     background: #ffc;
 }
-.form__field {
+.form__field {}
+.form__field_single_no {
     float: left;
     margin-right: 20px;
 }
@@ -797,6 +798,21 @@ body {
 }
 .form__field_errors {
     background: #ffc;
+}
+.form__label {
+    width: 8em;
+    padding: 3px 10px 0 0;
+    float: left;
+    font-size: 12px;
+}
+.form__input {
+
+}
+.form__input_readonly {
+    padding-left: 0;
+    line-height: 140%;
+    vertical-align: middle;
+    font-size: 11px;
 }
 
 
