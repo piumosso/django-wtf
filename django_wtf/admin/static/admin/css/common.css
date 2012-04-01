@@ -297,6 +297,10 @@ body {
     color: #666666;
     background: url("../img/nav-bg.gif") repeat-x scroll left bottom #EEEEEE;
 }
+.module__header.collapsed .module__header {
+    color: #999;
+    background: url(../img/nav-bg.gif) bottom left;
+}
 .module__subheader {
     margin-top: 0.6em;
     margin-bottom: 3px;
@@ -745,8 +749,18 @@ body {
 
 .form {}
 .form__fieldset {
-    margin: 0;
+    margin: 0 0 5px;
     padding: 0;
+}
+.form__fieldset.collapsed * {
+    display: none;
+}
+.form__fieldset .module__header {
+    display: block !important;
+}
+.form__fieldset-collapse-toggle {
+    display: inline !important;
+    background: transparent;
 }
 .form__fieldset-description {
     font-size: 12px;
@@ -784,6 +798,7 @@ body {
 .form__field_errors {
     background: #ffc;
 }
+
 
 /**
  * @subsection  Form's submit row

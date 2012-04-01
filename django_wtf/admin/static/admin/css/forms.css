@@ -122,24 +122,6 @@ form .wide p.help {
 
 /* COLLAPSED FIELDSETS */
 
-fieldset.collapsed * {
-    display: none;
-}
-
-fieldset.collapsed h2, fieldset.collapsed {
-    display: block !important;
-}
-
-fieldset.collapsed h2 {
-    background-image: url(../img/nav-bg.gif);
-    background-position: bottom left;
-    color: #999;
-}
-
-fieldset.collapsed .collapse-toggle {
-    background: transparent;
-    display: inline !important;
-}
 
 /* MONOSPACE TEXTAREAS */
 
