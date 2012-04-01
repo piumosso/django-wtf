@@ -108,11 +108,6 @@ input[type=submit].default {
     float: left;
 }
 
-fieldset .field-box {
-    float: right;
-    margin-left: 20px;
-    margin-right: 0;
-}
 
 .errorlist li {
     background-position: 100% .3em;

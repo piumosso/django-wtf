@@ -769,7 +769,21 @@ body {
 .rtl .m-login .form__row {
     float: right;
 }
-
+.form__row_errors {
+    background: #ffc;
+}
+.form__field {
+    float: left;
+    margin-right: 20px;
+}
+.rtl .form__field {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+.form__field_errors {
+    background: #ffc;
+}
 
 /**
  * @subsection  Form's submit row

@@ -397,10 +397,7 @@ td ul.errorlist li {
     margin: 0 !important;
 }
 
-.form__row_errors,
-.form__field_errors {
-    background: #ffc;
-}
+
 
 .form__row_errors input,
 .form__field_errors input,
