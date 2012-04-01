@@ -2,18 +2,13 @@
 
 /* FORM ROWS */
 
-.form-row {
-    overflow: hidden;
-    padding: 8px 12px;
-    font-size: 11px;
-    border-bottom: 1px solid #eee;
-}
 
-.form-row img, .form-row input {
+
+.form__row img, .form__row input {
     vertical-align: middle;
 }
 
-form .form-row p {
+form .form__row p {
     padding-left: 0;
     font-size: 11px;
 }

@@ -11,13 +11,9 @@
     margin-top: 1em;
 }
 
-.m-login .form-row {
-    padding: 4px 0;
-    float: left;
-    width: 100%;
-}
 
-.m-login .form-row label {
+
+.m-login .form__row label {
     float: left;
     width: 9em;
     padding-right: 0.5em;
@@ -27,7 +23,7 @@
     color: #333;
 }
 
-.m-login .form-row #id_username, .m-login .form-row #id_password {
+.m-login .form__row #id_username, .m-login .form__row #id_password {
     width: 14em;
 }
 

@@ -109,11 +109,6 @@ form {
     padding: 0;
 }
 
-fieldset {
-    margin: 0;
-    padding: 0;
-}
-
 blockquote {
     font-size: 11px;
     color: #777;
@@ -309,7 +304,7 @@ table.orderable-initalized .order-cell, body>tr>td.order-cell {
 
 /* FORM DEFAULTS */
 
-input, textarea, select, .form-row p {
+input, textarea, select, .form__row p {
     margin: 2px 0;
     padding: 2px 3px;
     vertical-align: middle;
@@ -424,10 +419,7 @@ div.system-message p.system-message-title {
     background: #ffc url(../img/icon_error.gif) 5px .3em no-repeat;
 }
 
-.description {
-    font-size: 12px;
-    padding: 5px 0 0 12px;
-}
+
 
 
 /* ACTION ICONS */

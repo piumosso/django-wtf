@@ -355,7 +355,7 @@ body {
 .rtl .object-tools {
     float: left;
 }
-.form-row .object-tools {
+.form__row .object-tools {
     height: 2em;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -740,10 +740,35 @@ body {
 
 
 /**
- * @section     Any form
+ * @section     Form
  */
 
 .form {}
+.form__fieldset {
+    margin: 0;
+    padding: 0;
+}
+.form__fieldset-description {
+    font-size: 12px;
+    padding: 5px 0 0 12px;
+}
+.form__row {
+    overflow: hidden;
+    padding: 8px 12px;
+    font-size: 11px;
+    border-bottom: 1px solid #eee;
+}
+.ie6 .form__row {
+    height: 1%;
+}
+.m-login .form__row {
+    width: 100%;
+    padding: 4px 0;
+    float: left;
+}
+.rtl .m-login .form__row {
+    float: right;
+}
 
 
 /**

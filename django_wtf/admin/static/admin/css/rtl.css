@@ -4,11 +4,8 @@ body {
 
 /* LOGIN */
 
-.m-login .form-row {
-    float: right;
-}
 
-.m-login .form-row label {
+.m-login .form__row label {
     float: right;
     padding-left: 0.5em;
     padding-right: 0;
