@@ -397,11 +397,17 @@ td ul.errorlist li {
     margin: 0 !important;
 }
 
-.errors {
+.form__row_errors,
+.form__field_errors {
     background: #ffc;
 }
 
-.errors input, .errors select, .errors textarea {
+.form__row_errors input,
+.form__field_errors input,
+.form__row_errors select,
+.form__field_errors select,
+.form__row_errors textarea,
+.form__field_errors textarea {
     border: 1px solid red;
 }
 
