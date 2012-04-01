@@ -4,11 +4,6 @@
 
 
 
-.form__row img, .form__row input {
-    vertical-align: middle;
-}
-
-
 
 /* FORM LABELS */
 
@@ -63,7 +58,7 @@ form ul.inline li {
     width: 350px;
 }
 
-form .aligned p, form .aligned ul {
+form .aligned ul {
     margin-left: 7em;
     padding-left: 30px;
 }
@@ -73,9 +68,7 @@ form .aligned table p {
     padding-left: 0;
 }
 
-form .aligned p.help {
-    padding-left: 38px;
-}
+
 
 .aligned .vCheckboxLabel {
     float: none !important;
@@ -87,10 +80,7 @@ form .aligned p.help {
     width: 610px;
 }
 
-.checkbox-row p.help {
-    margin-left: 0;
-    padding-left: 0 !important;
-}
+
 
 
 /* WIDE FIELDSETS */

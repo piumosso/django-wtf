@@ -806,13 +806,33 @@ body {
     font-size: 12px;
 }
 .form__input {
-
+    vertical-align: middle;
 }
 .form__input_readonly {
-    padding-left: 0;
+    margin: 2px 0;
+    padding: 2px 3px 2px 0;
     line-height: 140%;
     vertical-align: middle;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    font-weight: normal;
     font-size: 11px;
+}
+.form__field-help {
+    margin: 2px 0;
+    padding: 2px 3px;
+    vertical-align: middle;
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    font-weight: normal;
+    color: #999;
+    font-size: 10px;
+}
+.form__field-help_checkbox {
+    margin-left: 0;
+    padding-left: 0 !important;
+}
+.form__fieldset.aligned .form__field-help {
+    margin-left: 7em;
+    padding-left: 38px;
 }
 
 

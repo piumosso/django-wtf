@@ -52,7 +52,9 @@
                     {% endif %}
 
                     {% if field.field.help_text %}
-                        <p class="help">{{ field.field.help_text|safe }}</p>
+                        <div class="form__field-help {% if field.is_checkbox %}form__field-help_checkbox{% endif %}">
+                            {{ field.field.help_text|safe }}
+                        </div>
                     {% endif %}
                 </div>
             {% endfor %}

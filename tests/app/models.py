@@ -8,7 +8,7 @@ class Model(models.Model):
     float = models.FloatField('Float field', null=True, blank=True)
     integer = models.IntegerField('Integer field', null=True, blank=True)
     email = models.EmailField('Email field', null=True, blank=True)
-    ip = models.IPAddressField('IP address field', null=True, blank=True)
+    ip = models.IPAddressField('IP address field', null=True, blank=True, help_text='The IP!!!')
     text = models.TextField('Text field', null=True, blank=True)
 
     boolean = models.BooleanField('Boolean field')
